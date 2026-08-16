@@ -500,8 +500,16 @@ a {
 
 .contact-actions {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.contact-actions .btn {
+  min-width: 150px;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .contact-actions .primary {
@@ -527,7 +535,20 @@ a {
 .contact-actions .whatsapp:hover {
   transform: translateY(-2px);
 }
+/* Mobile Contact */
 
+@media (max-width: 600px) {
+  .contact-actions {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .contact-actions .btn {
+    width: 100%;
+    min-width: 0;
+  }
+}
 /* FOOTER */
 
 footer {
