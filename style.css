@@ -598,3 +598,15 @@ footer {
     padding: 12px 18px;
   }
 }
+/* Logo */
+.logo img {
+  width: 180px;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .logo img {
+    width: 145px;
+  }
+}
