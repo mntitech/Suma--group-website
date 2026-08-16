@@ -427,7 +427,10 @@ a {
   line-height: 1.6;
   margin: 0;
 }
-
+.why-card {
+  border: 5px solid red !important;
+  background: yellow !important;
+}
 
 /* WORK */
 
