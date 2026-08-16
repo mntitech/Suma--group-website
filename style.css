@@ -474,40 +474,83 @@ a {
   color: #66758c;
   font-size: 14px;
 }
-
 /* CONTACT */
 
 .contact-section {
-  padding: 70px 0;
+  padding: 80px 0;
   background: #0866d6;
   color: #ffffff;
 }
 
 .contact-content {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
   align-items: center;
-  justify-content: space-between;
-  gap: 40px;
+  gap: 60px;
 }
 
 .contact-section h2 {
   color: #ffffff;
+  font-size: 36px;
+  margin: 12px 0 18px;
 }
 
-.contact-section p {
+.contact-info > p {
   color: #dcecff;
+  max-width: 600px;
+  line-height: 1.7;
+}
+
+.contact-details {
+  display: grid;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.contact-detail {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 12px;
+}
+
+.contact-detail > span {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.contact-detail strong {
+  color: #ffffff;
+  display: block;
+  margin-bottom: 3px;
+}
+
+.contact-detail p {
+  color: #dcecff;
+  margin: 0;
+  font-size: 14px;
 }
 
 .contact-actions {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-direction: column;
   gap: 12px;
-  align-items: center;
+  width: 100%;
 }
 
 .contact-actions .btn {
-  min-width: 150px;
+  width: 100%;
+  min-width: 0;
   text-align: center;
   white-space: nowrap;
 }
@@ -516,39 +559,38 @@ a {
   background: #ffffff;
   color: #0866d6;
 }
-.contact-actions .email {
-  background: #ffffff;
-  color: #0866d6;
-  border: 1px solid #ffffff;
-}
 
 .contact-actions .whatsapp {
   background: #25d366;
   color: #ffffff;
 }
 
-.contact-actions .email:hover,
-.contact-actions .primary:hover {
+.contact-actions .email {
+  background: #ffffff;
+  color: #0866d6;
+  border: 1px solid #ffffff;
+}
+
+.contact-actions .btn:hover {
   transform: translateY(-2px);
 }
 
-.contact-actions .whatsapp:hover {
-  transform: translateY(-2px);
-}
+
 /* Mobile Contact */
 
-@media (max-width: 600px) {
-  .contact-actions {
-    width: 100%;
-    flex-direction: column;
-    flex-wrap: nowrap;
+@media (max-width: 900px) {
+
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 35px;
   }
 
-  .contact-actions .btn {
-    width: 100%;
-    min-width: 0;
+  .contact-section h2 {
+    font-size: 30px;
   }
+
 }
+
 /* FOOTER */
 
 footer {
