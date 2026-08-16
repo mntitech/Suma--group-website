@@ -598,3 +598,30 @@ footer {
     padding: 12px 18px;
   }
 }
+/* Header logo fix */
+.header .logo {
+  display: flex;
+  align-items: center;
+  width: 170px;
+  height: 55px;
+  overflow: hidden;
+}
+
+.header .logo img {
+  width: 150px !important;
+  height: 50px !important;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .header .logo {
+    width: 130px;
+    height: 45px;
+  }
+
+  .header .logo img {
+    width: 120px !important;
+    height: 42px !important;
+  }
+}
