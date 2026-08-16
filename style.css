@@ -600,13 +600,15 @@ footer {
 }
 /* Logo */
 .logo img {
-  width: 180px;
-  height: auto;
+  width: 105px;
+  height: 45px;
+  object-fit: contain;
   display: block;
 }
 
 @media (max-width: 600px) {
   .logo img {
-    width: 145px;
+    width: 95px;
+    height: 40px;
   }
 }
