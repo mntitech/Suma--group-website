@@ -518,7 +518,134 @@ a {
 }
 
 
-/* Mobile Contact */
+/* CONTACT */
+
+.contact-section {
+  padding: 85px 0;
+  background: #0866d6;
+  color: #ffffff;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: 70px;
+}
+
+.contact-info .small-title {
+  color: #dcecff;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.contact-section h2 {
+  color: #ffffff;
+  font-size: 38px;
+  line-height: 1.2;
+  margin: 12px 0 18px;
+}
+
+.contact-info > p {
+  color: #dcecff;
+  max-width: 620px;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.contact-details {
+  display: grid;
+  gap: 12px;
+}
+
+.contact-detail {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 14px;
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.contact-detail:hover {
+  transform: translateX(5px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.contact-detail > span {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.contact-detail strong {
+  color: #ffffff;
+  display: block;
+  margin-bottom: 3px;
+}
+
+.contact-detail p {
+  color: #dcecff;
+  margin: 0;
+  font-size: 14px;
+}
+
+
+/* CONTACT BUTTONS */
+
+.contact-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+}
+
+.contact-actions .btn {
+  width: 100%;
+  min-width: 0;
+  padding: 15px 20px;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.contact-actions .primary {
+  background: #ffffff;
+  color: #0866d6;
+}
+
+.contact-actions .whatsapp {
+  background: #25d366;
+  color: #ffffff;
+}
+
+.contact-actions .email {
+  background: #ffffff;
+  color: #0866d6;
+  border: 1px solid #ffffff;
+}
+
+.contact-actions .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* MOBILE CONTACT */
 
 @media (max-width: 900px) {
 
@@ -528,10 +655,45 @@ a {
   }
 
   .contact-section h2 {
-    font-size: 30px;
+    font-size: 32px;
+  }
+
+  .contact-actions {
+    padding: 20px;
   }
 
 }
+
+
+@media (max-width: 600px) {
+
+  .contact-section {
+    padding: 65px 0;
+  }
+
+  .contact-section h2 {
+    font-size: 28px;
+  }
+
+  .contact-info > p {
+    font-size: 15px;
+  }
+
+  .contact-detail {
+    padding: 13px;
+  }
+
+  .contact-actions {
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .contact-actions .btn {
+    padding: 14px 16px;
+  }
+
+}
+
 
 /* FOOTER */
 
